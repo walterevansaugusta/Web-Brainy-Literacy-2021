@@ -1,0 +1,43 @@
+<div id='background'>
+    <div id='side-menu'>
+        <button mat-icon-button class='icon' id='back' (click)='goBack()'></button>
+        <button mat-icon-button class='icon' id='home' routerLink='/home'></button>
+        <!-- <button mat-icon-button class='icon' id='chimera' routerLink='/chimera-zoo'></button> -->
+        <button mat-icon-button class='icon' id='purchase' (click)='goPreviousPinfold()'></button>
+        <button mat-icon-button class='icon' id='quiz-chimera-pinfold' (click)='goQuiz()'></button>
+        <button mat-icon-button class='icon bottom chimera-bank' id='bank' routerLink='/coins'></button>
+    </div>
+    <div id='main-body'>
+        <div class="button-section">
+            <button mat-icon-button class='arrow-button' id='back' (click)='goBackward()' style="cursor: pointer"></button>
+        </div>
+        <div class="zoo-section">
+            <div class="zoo-content" *ngFor="let item of slideItems;let j = index" [@move]="item.id == zooId ? direction : direction+'-inactive'">
+                <img class="chimera-image" [attr.src]="item.src" alt="item.id">
+                <div *ngFor="let animal of pinfoldAnimals[item.id]; let i = index " class="pinfold-container" [id]='"pinfold-" + i' (click)='goPinfold(i, animal)'>
+                    <div *ngIf="i && animal.completed" class="preview-section" id="preview-section">
+                        <div *ngIf="animal.head" [ngClass]="{'selected': animal.head}" class="combined-image" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + animal.head + ')'"></div>
+                        <div *ngIf="animal.body" [ngClass]="{'selected': animal.body}" class="combined-image" id="animal-body" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + animal.body + ')'"></div>
+                        <div *ngIf="animal.tail" [ngClass]="{'selected': animal.tail}" class="combined-image" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + animal.tail + ')'"></div>
+                    </div>
+                </div>
+                <div id="snacks" (click)='goSnacks()'></div>
+                <div id="gifts" (click)='goGifts()'></div>
+            </div>
+        </div>
+        <div class="button-section">
+            <button mat-icon-button class='arrow-button' id='forward' (click)='goForward()' style="cursor: pointer"></button>
+        </div>
+    </div>
+
+</div>
+
+<div id="fullModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" *ngIf="selectedAnimal">
+        <div class="modal-combined-image" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.head + ')'"></div>
+        <div class="modal-combined-image" id="animal-body" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.body + ')'"></div>
+        <div class="modal-combined-image" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.tail + ')'"></div>
+    </div>
+</div>
+

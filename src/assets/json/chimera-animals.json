@@ -1,0 +1,362 @@
+[
+    {
+        "id": "ant",
+        "display": "ant",
+        "head": {
+            "file": "ant-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "ant-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "ant-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "ant-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "bat",
+        "display": "bat",
+        "head": {
+            "file": "bat-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "bat-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "bat-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "bat-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "bug",
+        "display": "bug",
+        "head": {
+            "file": "bug-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "bug-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "bug-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "bug-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "cat",
+        "display": "cat",
+        "head": {
+            "file": "Cat-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Cat-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Cat-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Cat-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "cub",
+        "display": "cub",
+        "head": {
+            "file": "cub-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "cub-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "cub-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "cub-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "dog",
+        "display": "dog",
+        "head": {
+            "file": "Dog-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Dog-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Dog-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Dog-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "elk",
+        "display": "elk",
+        "head": {
+            "file": "elk-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "elk-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "elk-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "elk-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "fish",
+        "display": "fish",
+        "head": {
+            "file": "Fish-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Fish-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Fish-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Fish-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "flamingo",
+        "display": "flamingo",
+        "head": {
+            "file": "Flamingo-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Flamingo-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Flamingo-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Flamingo-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "fly",
+        "display": "fly",
+        "head": {
+            "file": "fly-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "fly-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "fly-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "fly-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "fox",
+        "display": "fox",
+        "head": {
+            "file": "Fox-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Fox-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Fox-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Fox-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "hen",
+        "display": "hen",
+        "head": {
+            "file": "Hen-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Hen-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Hen-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Hen-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "leopard",
+        "display": "leopard",
+        "head": {
+            "file": "Leopard-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Leopard-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Leopard-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Leopard-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "parrot",
+        "display": "parrot",
+        "head": {
+            "file": "Parrot-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Parrot-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Parrot-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Parrot-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "pig",
+        "display": "pig",
+        "head": {
+            "file": "pig-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "pig-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "pig-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "pig-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "pinkpeacock",
+        "display": "peacock",
+        "head": {
+            "file": "PinkPeacock-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "PinkPeacock-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "PinkPeacock-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "PinkPeacock-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "ram",
+        "display": "ram",
+        "head": {
+            "file": "Ram-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Ram-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Ram-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Ram-head_flipped.png",
+            "state": false
+        }
+    },
+    {
+        "id": "tiger",
+        "display": "tiger",
+        "head": {
+            "file": "Tiger-head.png",
+            "state": false
+        },
+        "body": {
+            "file": "Tiger-middle.png",
+            "state": false
+        },
+        "tail": {
+            "file": "Tiger-tail.png",
+            "state": false
+        },
+        "flipped": {
+            "file": "Tiger-head_flipped.png",
+            "state": false
+        }
+    }
+]

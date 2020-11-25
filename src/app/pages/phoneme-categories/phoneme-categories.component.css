@@ -1,0 +1,74 @@
+#main-body {
+  width: 169.7vh;
+  height: 0vh;
+  padding-left: 40vh;
+  position: relative;
+}
+
+#background {
+    background-color: #FFFFFF !important;
+    background: url('../../../assets/img/backgrounds/phoneme_categories.png') no-repeat scroll transparent;
+    background-position: 20vh 0vh;
+    background-size: 170.1vh;
+}
+
+/* Phonics Categories */
+#consonants {
+    background: url('../../../assets/img/buttons/consonants.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 38.5vh;
+    cursor: pointer;
+}
+#consonant_blends {
+    background: url('../../../assets/img/buttons/consonant_blends.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 36.6vh;
+    cursor: pointer;
+}
+#vowel_consonant_blends {
+    background: url('../../../assets/img/buttons/vowel_consonant_blends.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 39.3vh;
+    cursor: pointer;
+}
+#vowels {
+    background: url('../../../assets/img/buttons/vowels.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 31.9vh;
+    cursor: pointer;
+}
+#vowel_pairs {
+    background: url('../../../assets/img/buttons/vowel_pairs.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 28.4vh;
+    cursor: pointer;
+}
+#all {
+    background: url('../../../assets/img/buttons/all.png') no-repeat scroll transparent;
+    background-position: center;
+    background-size: 30.3vh;
+    cursor: pointer;
+}
+
+.category_button {
+    width: 39vh;
+    height: 29vh;
+    margin: 5vh 2vh 0vh 0vh;
+    border: none;
+    margin-left: auto;
+}
+
+.row {
+  float: left;
+  margin-left: 3vh;
+}
+
+.column {
+    padding-top: 2.5vh;
+}
+/* Clear floats after the columns */
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}

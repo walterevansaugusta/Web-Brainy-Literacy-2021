@@ -1,0 +1,57 @@
+#background {
+  background-color: #FFFFFF !important;
+}
+
+#main-body {
+  width: 169.7vh;
+  height: 0vh;
+  padding-left: 22vh;
+  position: relative;
+}
+
+.back-button {
+    width: 9.5vh;
+    height: 9.5vh;
+    display: block;
+    position: absolute;
+    margin-left: 10vh;
+    margin-bottom: 3.5vh;
+    border: none;
+    margin-top: 45vh;
+}
+
+.after-button {
+    width: 9.5vh;
+    height: 9.5vh;
+    display: block;
+    position: absolute;
+    margin-left: 103vh;
+    margin-bottom: 3.5vh;
+    border: none;
+    margin-top: 45vh;
+}
+
+.letter {
+  font-size: 19.4vh;
+  margin-left: 49vh;
+  padding-top: 27.5vh;
+  cursor: pointer;
+  transition: all .5s;
+  transform: scale(1) translate(5.5vh, 5vh);
+}
+
+.animateLetter {
+  transition: all .5s;
+  transform: translate(12vh, 3vh) scale(1.12) !important;
+}
+
+
+/* Buttons */
+#forward {
+    background: url('../../../assets/img/buttons/forward.png') no-repeat scroll 0 0 transparent;
+    background-size: 9.5vh 9.5vh;
+}
+
+.bottom {
+  transform: translateY(13vh);
+}

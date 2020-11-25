@@ -1,0 +1,131 @@
+#background {
+	background-color: #FFFFFF !important;
+}
+
+#side-menu {
+	background-color: #6EC7D4 !important;
+}
+
+#main-body {
+  width: 169.7vh;
+  height: 0vh;
+  padding-left: 40vh;
+  position: relative;
+}
+
+.column {
+  float: left;
+  text-align: center;
+  width: 48vh;
+  transform: translateX(-21vh);
+}
+
+.column .text {
+  font-size: 4.8vh;
+  cursor: pointer;
+  position: absolute;
+  top: 55vh;
+  z-index: 999;
+  margin-left: 21vh;
+}
+
+.letter {
+  font-size: 19.4vh;
+  padding-top: -10vh;
+  margin-left: 44vh;
+  cursor: pointer;
+  transition: all .5s;
+  transform: scale(1);
+}
+.letter.one {
+  transform: translate(11vh, 3vh);
+}
+.letter.two {
+  transform: translate(5.5vh, 3vh);
+}
+.letter.three {
+  transform: translate(5vh, 3vh);
+}
+
+::ng-deep span {
+  color: red;
+}
+
+.back-button {
+    width: 9.5vh;
+    height: 9.5vh;
+    display: block;
+    position: absolute;
+    margin-left: 10vh;
+    margin-bottom: 3.5vh;
+    border: none;
+    margin-top: 15vh;
+}
+
+.after-button {
+    width: 9.5vh;
+    height: 9.5vh;
+    display: block;
+    position: absolute;
+    margin-left: 103vh;
+    margin-bottom: 3.5vh;
+    border: none;
+    margin-top: 15vh;
+}
+
+.row {
+  padding-left: 10vh;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.word-image {
+  margin-top: 22vh;
+  cursor: pointer;
+  transition: all .5s;
+  transform: scale(1) !important;
+  width: 70%;
+}
+
+.animate {
+  transition: all .5s;
+  transform: translate(-21vh, -1vh) scale(1.12) !important;
+}
+.animate-one {
+  transition: all .5s;
+  transform: translate(18vh, 3vh) scale(1.12) !important;
+}
+.animate-two {
+  transition: all .5s;
+  transform: translate(12vh, 3vh) scale(1.12) !important;
+}
+.animate-three {
+  transition: all .5s;
+  transform: translate(11vh, 3vh) scale(1.12) !important;
+}
+
+/* Text */
+h2 {
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+::ng-deep span {
+  color: red;
+}
+
+/* Buttons */
+#forward {
+    background: url('../../../assets/img/buttons/forward.png') no-repeat scroll 0 0 transparent;
+    background-size: 9.5vh 9.5vh;
+}

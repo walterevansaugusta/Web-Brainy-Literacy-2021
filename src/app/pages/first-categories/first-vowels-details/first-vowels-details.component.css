@@ -1,0 +1,48 @@
+#main-body {
+    width: 169.7vh;
+    height: 0vh;
+    padding-left: 23vh;
+    position: relative;
+  }
+  
+  #background {
+      background-color: #FFFFFF !important;
+      background: url('../../../../assets/img/backgrounds/first_vowels.png') no-repeat scroll transparent;
+      background-position: 14vh;
+      background-size: auto 100vh;
+  }
+  
+  /* First Categories */
+  #short_vowels {
+      width: 110vh;
+      height: 15vh;
+      margin-top: 4vh;
+      margin: 0 0 0 31vh;
+  }
+  #long_vowels {
+    margin: 2vh 0 0 0;
+    width: 135vh;
+    height: 24vh;
+  }
+  #vowel_pairs {
+    margin: 2vh 0 0 0;
+    width: 135vh;
+    height: 24vh;
+  }
+  #y_sounds {
+    margin: 0 0 0 10vh;
+    width: 127vh;
+    height: 24vh;
+  }
+
+  .column {
+    padding-top: 12vh;
+  }
+
+  .category_button {
+      margin: 6vh 0vh 0vh 41vh;
+      border: none;
+      display: inherit;
+      cursor: pointer;
+      background-color: transparent;
+  }

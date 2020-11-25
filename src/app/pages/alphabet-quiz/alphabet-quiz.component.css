@@ -1,0 +1,99 @@
+#background {
+  background-color: #FFFFFF !important;
+}
+
+#main-body {
+  width: 169.7vh;
+  height: 0vh;
+  padding-left: 22vh;
+  position: relative;
+}
+
+.column {
+  float: left;
+}
+
+#letter, 
+#letter2, 
+#letter3, 
+#letter4 {
+    font-size: 19.4vh;
+    cursor: pointer;
+}
+#letter,
+#letter3 {
+  margin-left: 55vh;
+}
+#letter2,
+#letter4 {
+  margin-left: 35vh;
+}
+#letter,
+#letter2 {
+  margin-top: 18vh;
+}
+
+.letter-temp,
+.letter-temp2,
+.letter-temp3,
+.letter-temp4 {
+  color: white;
+}
+
+.animateLetter1 {
+  transition: all 0.5s linear;
+  transform: translate(22vh, 10vh) scale(1.12) !important;
+}
+.animateLetter2 {
+  transition: all 0.5s linear;
+  transform: translate(-22vh, 10vh) scale(1.12) !important;
+}
+.animateLetter3 {
+  transition: all 0.5s linear;
+  transform: translate(22vh, -10vh) scale(1.12) !important;
+}
+.animateLetter4 {
+  transition: all 0.5s linear;
+  transform: translate(-22vh, -10vh) scale(1.12) !important;
+}
+
+/* Buttons */
+#forward {
+    background: url('../../../assets/img/buttons/forward.png') no-repeat scroll 0 0 transparent;
+    background-size: 9.5vh 9.5vh;
+}
+
+.bottom {
+  transform: translateY(13vh);
+}
+
+#ball {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
+  position: fixed;
+  background: url('../../../assets/img/rewards/gold-coin.png') no-repeat scroll 50% 50% transparent;
+  background-size: cover;
+}
+
+.bank-animation {
+  transition: all .5s;
+  transform: translate(0vh, 13vh) scale(1.2) !important;
+}
+
+.stars-pane {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars-pane .star-pane {
+  margin: 0 5px;
+}
+
+.star-section {
+  float: none;
+}

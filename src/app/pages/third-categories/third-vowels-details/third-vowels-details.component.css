@@ -1,0 +1,71 @@
+#main-body {
+  width: 169.7vh;
+  height: 0vh;
+  padding-left: 23vh;
+  position: relative;
+}
+
+#background {
+    background-color: #FFFFFF !important;
+    background: url('../../../../assets/img/backgrounds/third_vowels_details.png') no-repeat scroll transparent;
+    background-position: 14vh 2vh;
+    background-size: auto 100vh;
+}
+
+/* Phonics Categories */
+#short_vowels {
+    width: 32%;
+    margin-left: 13%;
+    cursor: pointer;
+}
+#long_vowels {
+    width: 42%;
+    margin-left: 24%;
+    cursor: pointer;
+}
+
+#vowel_pairs {
+    width: 43%;
+    cursor: pointer;
+}
+
+#y_sounds {
+    width: 47%;
+    margin-left: 24%;
+    cursor: pointer;
+}
+
+#r {
+    width: 44%;
+    cursor: pointer;
+}
+
+#schwas {
+    width: 37%;
+    margin-left: 24%;
+    cursor: pointer;
+}
+
+#silent-e {
+    width: 37%;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.category_button {
+    width: 70vh;
+    height: 13vh;
+    border: none;
+    display: block;
+    background: transparent;
+}
+
+.column {
+    padding-top: 10vh;
+}
+/* Clear floats after the columns */
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}

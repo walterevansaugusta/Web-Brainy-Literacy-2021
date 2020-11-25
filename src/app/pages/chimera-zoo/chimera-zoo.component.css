@@ -1,0 +1,181 @@
+#main-body {
+    width: calc(100vw - 17vh);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoo-section {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.zoo-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.button-section {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-button {
+    width: 9.5vh;
+    height: 9.5vh;
+    display: block;
+    border: none;
+}
+
+#forward {
+    background: url('../../../assets/img/buttons/forward.png') no-repeat scroll 0 0 transparent;
+    background-size: 9.5vh 9.5vh;
+}
+
+#background {
+    background-color: #f3efef !important;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chimera-bank {
+    top: 68vh;
+}
+
+.chimera-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.pinfold-container {
+    width: 16vw;
+    height: 10vh;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+} 
+
+#pinfold-1 {
+    top: 12%;
+    left: 15%;
+}
+
+#pinfold-2 {
+    top: 12%;
+    left: 63%;
+}
+
+#pinfold-3 {
+    top: 39%;
+    left: 6%;
+}
+
+#pinfold-4 {
+    top: 39%;
+    left: 39%;
+}
+
+#pinfold-5 {
+    top: 39%;
+    left: 70%;
+}
+
+#pinfold-6 {
+    top: 64%;
+    left: 13%;
+}
+
+#pinfold-7 {
+    top: 64%;
+    left: 60%;
+}
+
+#snacks {
+    width: 19vw;
+    height: 8vh;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 90%;
+    left: 10%;
+}
+
+#gifts {
+    width: 19vw;
+    height: 8vh;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 90%;
+    left: 63%;
+}
+
+.preview-section {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combined-image {
+    width: 5vh;
+    height: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#animal-body {
+    background-position: center center;
+}
+
+#animal-tail {
+    background-position: right;
+}
+
+#animal-flipped {
+    background-position: right;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+    /* Modal Content/Box */
+.modal-content {
+    background-color: rgba(0,0,0,0);
+    margin: 15% auto; /* 15% from the top and centered */
+    /* border: 1px solid #888; */
+    width: 90vh; /* Could be more or less, depending on screen size */
+    height: 59vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-combined-image {
+    width: 30vh;
+    height: 59vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+#background {
+    background-color: #ddf6f8 !important;
+}
+
+#side-menu {
+    background-color: #6EC7D4 !important;
+}
+
+#main-body {
+    width: 169.7vh;
+    height: 0vh;
+    padding-left: 40vh;
+    position: relative;
+}
+
+.column {
+    float: left;
+    text-align: right;
+    width: 100%;
+    height: 92.5vh;
+    transform: translateX(-21vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.row > img{
+    padding: 2vh;
+}

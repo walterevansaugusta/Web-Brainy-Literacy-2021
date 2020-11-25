@@ -1,0 +1,98 @@
+<div id='background'>
+    <div id='side-menu'>
+        <button mat-icon-button class='icon' id='back' (click)='goBack()'></button>
+        <button mat-icon-button class='icon' id='home' routerLink='/home'></button>
+        <button mat-icon-button class='icon' id='chimera' routerLink='/chimera-zoo'></button>
+        <button mat-icon-button class='icon' id='quiz-chimera' (click)='goQuiz()'></button>
+        <button mat-icon-button class='icon bottom chimera-bank' id='bank' routerLink='/coins'></button>
+    </div>
+    <div id='main-body'>
+        <div class="select-container">
+            <div class="chimera-container">
+                <div class="chimera-card" *ngFor="let selectedAnimal of selectedAnimals; let i = index">
+                    <span>{{selectedAnimal.display}}</span>
+                    <div class="images-content">
+                        <div [ngClass]="{'unselected': selectedAnimal.head.state}" class="image-part-content" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.head.file + ')'" (click)='selectHead(selectedAnimal.head.file, selectedAnimal.id)' >
+                        </div>
+                        <div [ngClass]="{'unselected': selectedAnimal.body.state}" class="image-part-content" id="animal-body" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.body.file + ')'" (click)='selectBody(selectedAnimal.body.file, selectedAnimal.id)' >
+                        </div>
+                        <div [ngClass]="{'unselected': selectedAnimal.tail.state}" class="image-part-content" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.tail.file + ')'" (click)='selectTail(selectedAnimal.tail.file, selectedAnimal.id, "tail")' >
+                        </div>
+                        <div [ngClass]="{'unselected': selectedAnimal.flipped.state}" class="image-part-content" id="animal-flipped" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + selectedAnimal.flipped.file + ')'" (click)='selectTail(selectedAnimal.flipped.file, selectedAnimal.id, "flipped")' >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sale-container">
+            <div class="sale-section">
+                <div class="preview-section" id="preview-section">
+                    <div [@slideInOut]="completeChimeraAnimal" [ngClass]="{'unselected': !selectedHeadState}" class="combined-image" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.head + ')'"></div>
+                    <div [@slideInOut]="completeChimeraAnimal" [ngClass]="{'unselected': !selectedBodyState}" class="combined-image" id="animal-body" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.body + ')'"></div>
+                    <div [@slideInOut]="emptyTail" [ngClass]="{'unselected': !isTail}" class="combined-image" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.tail + ')'"></div>
+                    <div [@slideInOut]="emptyFlipped" [ngClass]="{'unselected': !isFlipped}" class="combined-image" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.tail + ')'"></div>
+                </div>
+                <div class="coin-section" id="coin-section">
+                    <div class="coin-pane" id="head-coin">
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                    </div>
+                    <div class="coin-pane" id="body-coin">
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                    </div>
+                    <div class="coin-pane" id="tail-coin">
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                    </div>
+                    <div class="coin-pane flipped-coin" id="flipped-coin">
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                        <div class="preview-coin">
+                            <img src="../../../assets/img/rewards/coin_gold_new.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bank-section">
+                <div class="bank-content">
+                    <h2 class="coin-label">You have</h2>
+                    <div class="bank-pane">
+                        <h2>{{totalCoin}}</h2>
+                    </div>
+                    <h2 class="coin-label">coins to spend</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <!-- <span class="close" (click)='closeModal()'>&times;</span> -->
+        <div class="modal-combined-image" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.head + ')'"></div>
+        <div class="modal-combined-image" id="animal-body" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.body + ')'"></div>
+        <div class="modal-combined-image" id="animal-tail" [style.background-image]="'url(../../../assets/img/chimera-zoo/' + chimeraAnimal.tail + ')'"></div>
+    </div>
+
+</div>
+

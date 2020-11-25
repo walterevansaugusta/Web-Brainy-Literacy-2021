@@ -1,0 +1,48 @@
+<div id='background'>
+    <div id='main-body'>
+        <div class='row'>
+            <div class='column puzzle-pane'>
+                <div class='letter' [ngClass]="{'animate': phonemeAnimate}" (click)='playPhonemeAudio()'>{{phoneme.display}}</div>
+                <div class='puzzle' (click)='goToPuzzle()' [ngClass]="{'puzzle-completed':phoneme.puzzlePiecesEarned == 12 }">
+                    <img *ngFor='let image of puzzlePieceImages; let i = index' class='puzzle-image' src={{image}} [ngClass]="{'visible':phoneme.puzzlePiecesEarned > i, 'animate-puzzle': puzzleAnimate && phoneme.puzzlePiecesEarned <= i + piecesToAnimate, 'animate-default': !puzzleAnimate}"><br>
+                </div>
+            </div>
+            <div class='column answer-pane'>
+                <div class='stars-pane'>
+                    <div class="star-pane" *ngFor="let star of starStatus; let i = index">
+                        <img [src]="star === 'gold' ? goldStarImg : silverStarImg" />
+                    </div>
+                </div>
+                <div class='row' id='pane-0'>
+                    <div [ngClass]="{'animate': ex1Animate, 'animateEx1': ex1CorrectAnimate, 'ex-temp2': ex2CorrectAnimate, 'ex-temp3': ex3CorrectAnimate}">
+        				<img src={{img1}} class='word-image word-image-top' (click)='onClick1(0)'>
+                        <br>
+                        <span class="answer" [ngClass]="{'show-answer': ex1CorrectAnimate, 'is-capital': capital }"  [innerHTML]="correctAnswerToDisplay"></span>
+        			</div>
+                </div>
+
+    			<div id='pane-1' class='column' [ngClass]="{'animate': ex2Animate, 'animateEx2': ex2CorrectAnimate, 'ex-temp1': ex1CorrectAnimate, 'ex-temp3': ex3CorrectAnimate}">
+    				<img src={{img2}} class='word-image word-image-bottom' (click)='onClick2(1)'>
+                    <br>
+                    <span class="answer" [ngClass]="{'show-answer': ex2CorrectAnimate, 'is-capital': capital }" [innerHTML]="correctAnswerToDisplay" ></span>
+                </div>
+
+    			<div id='pane-2' class='column' [ngClass]="{'animate': ex3Animate, 'animateEx3': ex3CorrectAnimate, 'ex-temp1': ex1CorrectAnimate, 'ex-temp2': ex2CorrectAnimate}">
+    				<img src={{img3}} class='word-image word-image-bottom' (click)='onClick3(2)'>
+                    <br>
+                    <span class="answer"  [ngClass]="{'show-answer': ex3CorrectAnimate, 'is-capital': capital }" [innerHTML]="correctAnswerToDisplay" ></span>
+    			</div>
+            </div>
+        </div>
+	</div>
+
+    <div id='side-menu'>
+        <button mat-icon-button class='icon' id='back' (click)='goBack()'></button>
+        <button mat-icon-button class='icon' id='home' routerLink='/home'></button>
+        <button mat-icon-button class='icon bottom' id='repeat' (click)="playAudio()"></button>
+        <button mat-icon-button class='icon bottom' id='bank' routerLink='/coins'></button>
+        <button mat-icon-button class='icon bottom' id='puzzle' routerLink='/puzzles'></button>
+    </div>
+
+    <div id='ball'></div>
+</div>

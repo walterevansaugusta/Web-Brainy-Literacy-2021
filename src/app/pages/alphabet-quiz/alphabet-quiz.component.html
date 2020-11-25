@@ -1,0 +1,28 @@
+<div id='background'>
+    <div id='main-body'>
+        <div class="column star-section">
+            <div class='stars-pane'>
+                <div class="star-pane" *ngFor="let star of starStatus; let i = index">
+                    <img [src]="star === 'gold' ? goldStarImg : silverStarImg" />
+                </div>
+            </div>
+        </div>
+        <div class='column'>
+            <div id='letter' [ngClass]="{'animateLetter1': letterAnimate1, 'letter-temp2': letterAnimate2, 'letter-temp3': letterAnimate3, 'letter-temp4': letterAnimate4}" (click)='check(ex1, 1)'>{{ex1.letter}}</div>
+            <div id='letter3' [ngClass]="{'animateLetter3': letterAnimate3, 'letter-temp': letterAnimate1, 'letter-temp2': letterAnimate2, 'letter-temp4': letterAnimate4}" (click)='check(ex3, 3)'>{{ex3.letter}}</div>
+        </div>
+        <div class='column'>
+            <div id='letter2' [ngClass]="{'animateLetter2': letterAnimate2, 'letter-temp': letterAnimate1, 'letter-temp3': letterAnimate3, 'letter-temp4': letterAnimate4}" (click)='check(ex2, 2)'>{{ex2.letter}}</div>
+            <div id='letter4' [ngClass]="{'animateLetter4': letterAnimate4, 'letter-temp': letterAnimate1, 'letter-temp2': letterAnimate2, 'letter-temp3': letterAnimate3}" (click)='check(ex4, 4)'>{{ex4.letter}}</div>
+        </div>
+    </div>
+
+    <div id='side-menu'>
+        <button mat-icon-button class='icon' id='back' (click)='goBack()'></button>
+        <button mat-icon-button class='icon' id='home' routerLink='/home'></button>
+        <button mat-icon-button class='icon bottom' id='repeat' (click)='playAudio()'></button>
+        <button mat-icon-button [ngClass]="{ 'icon':true, 'bottom':true}" id='bank' routerLink="/coins"></button>
+    </div>
+
+    <div id='ball'></div>
+</div>

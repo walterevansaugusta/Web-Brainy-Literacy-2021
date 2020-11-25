@@ -1,0 +1,47 @@
+#main-body {
+    width: 169.7vh;
+    height: 0vh;
+    padding-left: 23vh;
+    position: relative;
+  }
+  
+  #background {
+      background-color: #FFFFFF !important;
+      background: url('../../../../assets/img/backgrounds/k_beginning_sounds.png') no-repeat scroll transparent;
+      background-position: 23vh top;
+      background-size: 132vh;
+  }
+  
+  /* Pre-K Categories */
+  #lowercase_alphabetical {
+      cursor: pointer;
+      height: 15vh;
+      width: 101vh;
+      margin-top: 0vh;
+  }
+  #lowercase_bmras {
+    cursor: pointer;
+    height: 16vh;
+    width: 101vh;
+  }
+  #uppercase_alphabetical {
+    cursor: pointer;
+    height: 17vh;
+  }
+  #uppercase_bmras {
+    cursor: pointer;
+    height: 16vh;
+    margin: 2.2vh 0vh 0vh 7vh;
+  }
+
+  .column {
+    padding-top: 15vh;
+  }
+
+  .category_button {
+      margin: 5.2vh 0vh 0vh 7vh;
+      border: none;
+      display: inherit;
+      width: 115vh;
+      background-color: transparent;
+  }

@@ -1,0 +1,17 @@
+<div id='background'>
+    <div id='main-body'>
+        <div class='column'>
+	        <button mat-icon-button class='back-button' id='back' (click)='prev($event)' style="z-index: 99; cursor: pointer"></button>
+        	<button mat-icon-button class='after-button' id='forward' (click)='next($event)' style="z-index: 99; cursor: pointer"></button>
+        	<div class='letter' [ngClass]="{'animateLetter': letterAnimate}" (click)='playAudio()'>{{letter.letter}}</div>
+        </div>
+    </div>
+
+    <div id='side-menu'>
+        <button mat-icon-button class='icon' id='back' (click)='goBack()'></button>
+        <button mat-icon-button class='icon' id='home' routerLink='/home'></button>
+        <button mat-icon-button class='icon bottom' id='repeat' (click)='playAudio()'></button>
+        <button mat-icon-button class='icon bottom quiz-animation' id='quiz' (click)="takeQuiz()"></button>
+        <button mat-icon-button class='icon bottom' id='bank' routerLink='/coins'></button>
+    </div>
+</div>
